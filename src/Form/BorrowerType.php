@@ -27,6 +27,9 @@ class BorrowerType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Borrower::class,
+            'attr' => [
+                'novalidate' => 'novalidate',
+            ]
         ]);
     }
 }
